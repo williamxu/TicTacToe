@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">TicTacToe</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">TicTacToe</string>
+    <string name="new_game">New Game</string>
+    <string name="x_turn">x\'s Turn</string>
+    <string name="o_turn">o\'s Turn</string>
+    <string name="x_win">x Wins!</string>
+    <string name="o_win">o Wins!</string>
+    <string name="tie_game">It\'s a tie.</string>
+    <string name="space">" "</string>
+    <string name="hello">Welcome to TicTacToe!</string>
+
+</resources>

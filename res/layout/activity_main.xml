@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/hello"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:context=".MainActivity" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dip"
+                android:text="@string/space" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/table"
+        android:layout_below="@+id/table"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_game" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/table"
+        android:layout_centerHorizontal="true"
+        android:text="@string/x_turn"
+        android:textSize="24sp" />
+
+</RelativeLayout>
