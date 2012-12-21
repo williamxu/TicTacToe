@@ -2,6 +2,7 @@ package dev.android.tictactoe;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.res.Resources;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -47,13 +48,20 @@ public class MainActivity extends Activity implements OnClickListener {
     }
 
     public void onClick(View v) {
-	if (v.getId() == R.id.new_game_button) {
-	    game.resetGame();
-	    for (int row = 0; row < TicTacToeGame.NUM_ROWS; row++) {
-		for (int col = 0; col < TicTacToeGame.NUM_COLUMNS; col++) {
-		    ticTacToeButtons[row][col].setEnabled(true);
+	Resources r = getResources();
+	String gameState = gameStateTextView.getText().toString();
+	if (gameState == r.getString(R.string.x_win)
+		|| gameState == r.getString(R.string.o_win)
+		|| gameState == r.getString(R.string.tie_game)) {
+	    if (v.getId() == R.id.new_game_button) {
+		game.resetGame();
+		for (int row = 0; row < TicTacToeGame.NUM_ROWS; row++) {
+		    for (int col = 0; col < TicTacToeGame.NUM_COLUMNS; col++) {
+			ticTacToeButtons[row][col].setEnabled(true);
+		    }
 		}
-	    }
+	    } else
+		return;
 	}
 	for (int row = 0; row < TicTacToeGame.NUM_ROWS; row++) {
 	    for (int col = 0; col < TicTacToeGame.NUM_COLUMNS; col++) {
